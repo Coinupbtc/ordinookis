@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ordinookis</title>
+<style>
+  :root {
+    --bg: #0c0f0c;
+    --panel: #141a14;
+    --ink: #e8f0e4;
+    --muted: #8a9a82;
+    --accent: #c8f06a;
+    --line: #243024;
+    --gold: #e0b84a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+    background:
+      radial-gradient(1200px 600px at 10% -10%, #1a2a12 0%, transparent 55%),
+      radial-gradient(900px 500px at 100% 0%, #2a2010 0%, transparent 50%),
+      var(--bg);
+    color: var(--ink);
+    min-height: 100vh;
+  }
+  header {
+    padding: 2.5rem 1.25rem 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  h1 {
+    margin: 0 0 .4rem;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    letter-spacing: .04em;
+    color: var(--accent);
+  }
+  .tag {
+    color: var(--muted);
+    max-width: 42rem;
+    line-height: 1.5;
+  }
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.25rem 3rem;
+  }
+  h2 {
+    margin: 2rem 0 .75rem;
+    font-size: .95rem;
+    text-transform: uppercase;
+    letter-spacing: .14em;
+    color: var(--gold);
+  }
+  .chars {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: .85rem;
+  }
+  .char {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .char img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    background: #000;
+  }
+  .char figcaption {
+    padding: .55rem .65rem .7rem;
+    font-size: .72rem;
+    color: var(--muted);
+  }
+  .videos {
+    display: grid;
+    gap: 1.25rem;
+  }
+  .clip {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .clip video {
+    display: block;
+    width: 100%;
+    max-height: 70vh;
+    background: #000;
+  }
+  .clip .meta {
+    padding: .75rem 1rem 1rem;
+  }
+  .clip h3 {
+    margin: 0 0 .25rem;
+    font-size: 1rem;
+    color: var(--ink);
+  }
+  .clip p {
+    margin: 0;
+    color: var(--muted);
+    font-size: .8rem;
+  }
+  footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.25rem 2.5rem;
+    color: var(--muted);
+    font-size: .75rem;
+  }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+  <header>
+    <h1>ORDINOOKIS</h1>
+    <p class="tag">Pixel character art + short clips. Open this page locally (or via <code>./setup.sh</code>) — videos are remuxed for browser playback.</p>
+  </header>
+
+  <main>
+    <h2>Characters</h2>
+    <div class="chars">
+      <figure class="char">
+        <img src="characters/01-poker-shark.jpg" alt="Poker shark">
+        <figcaption>01 · Poker shark</figcaption>
+      </figure>
+      <figure class="char">
+        <img src="characters/02-pit-boss-shiba.jpg" alt="Pit boss Shiba">
+        <figcaption>02 · Pit boss</figcaption>
+      </figure>
+      <figure class="char">
+        <img src="characters/03-slot-fiend-redpanda.jpg" alt="Slot fiend">
+        <figcaption>03 · Slot fiend</figcaption>
+      </figure>
+      <figure class="char">
+        <img src="characters/04-roulette-highroller.jpg" alt="Roulette high-roller">
+        <figcaption>04 · Roulette high-roller</figcaption>
+      </figure>
+      <figure class="char">
+        <img src="characters/05-craps-heat.jpg" alt="Craps heat">
+        <figcaption>05 · Craps heat</figcaption>
+      </figure>
+    </div>
+
+    <h2>Videos</h2>
+    <div class="videos">
+      <article class="clip">
+        <video controls playsinline preload="metadata" poster="characters/01-poker-shark.jpg">
+          <source src="videos/ordinooki-01-poker-shark.mp4" type="video/mp4">
+        </video>
+        <div class="meta">
+          <h3>Poker shark</h3>
+          <p>Character plate → short clip</p>
+        </div>
+      </article>
+      <article class="clip">
+        <video controls playsinline preload="metadata" poster="characters/02-pit-boss-shiba.jpg">
+          <source src="videos/ordinooki-02-pit-boss.mp4" type="video/mp4">
+        </video>
+        <div class="meta">
+          <h3>Pit boss</h3>
+          <p>Character plate → short clip</p>
+        </div>
+      </article>
+      <article class="clip">
+        <video controls playsinline preload="metadata">
+          <source src="videos/ordinookis-gambling-trenches.mp4" type="video/mp4">
+        </video>
+        <div class="meta">
+          <h3>Gambling trenches</h3>
+          <p>Montage cut of the roster</p>
+        </div>
+      </article>
+      <article class="clip">
+        <video controls playsinline preload="metadata">
+          <source src="videos/ken-griffey-home-run.mp4" type="video/mp4">
+        </video>
+        <div class="meta">
+          <h3>Home-run experiment</h3>
+          <p>Separate text-to-video test clip</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    Coinupbtc · open <a href="index.html">index.html</a> or run <code>./setup.sh</code>
+  </footer>
+</body>
+</html>

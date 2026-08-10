@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
-# ordinookis — standard entry
+# ordinookis — serve the character + video gallery
 set -euo pipefail
 cd "$(dirname "$0")"
-
-echo "ordinookis"
-echo "See README.md → At a glance / Try it."
-
-echo "Deps: see README.md"
-echo "How: ./setup.sh then see characters/ and videos/."
+PORT="${PORT:-8766}"
+echo "Ordinookis gallery → http://127.0.0.1:${PORT}/"
+echo "Ctrl+C to stop."
+exec python3 -m http.server "$PORT" --bind 127.0.0.1
