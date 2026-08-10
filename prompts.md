@@ -24,7 +24,3 @@ Renders were produced with a local image→video stack at **1280×720-ish @24fps
 3. **slot-fiend-redpanda** — Pixel-art cyan red panda yanking a slot machine lever under pink neon.
 4. **roulette-highroller** — Pixel-art grey bear high-roller sliding chips onto roulette red.
 5. **craps-heat** — Pixel-art brown bear with heart eyes rolling dice at craps as confetti falls.
-
-## Other clip
-
-- `videos/ken-griffey-home-run.mp4` — separate text-to-video experiment
