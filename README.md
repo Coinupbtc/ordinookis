@@ -1,5 +1,8 @@
 # ordinookis
 
+![Screenshot](docs/screenshots/hero.png)
+
+
 ## At a glance
 
 | | |
