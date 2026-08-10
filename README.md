@@ -1,5 +1,8 @@
 # Ordinookis
 
+![Screenshot](docs/screenshots/hero.png)
+
+
 ![Gallery](docs/screenshots/hero.png)
 
 Pixel character art + short browser-playable clips.

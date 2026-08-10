@@ -1,22 +1,22 @@
 # Feel-pass — ordinookis
 
-Cold open as a stranger (~15 min). Surface: `index.html` gallery.
+Cold open as a stranger (~15 min). Surface: README + screenshot + try-it path.
 
 ## Five bullets
 
-1. **Cold open:** Title + tagline make it obvious this is a character/video gallery.
-2. **Primary path:** Characters grid loads; videos have visible controls under Videos.
-3. **Break/empty:** Missing video file would show empty player — paths are relative and listed in README.
-4. **Loading:** Faststart MP4s begin without waiting for a full download.
-5. **Plain English:** Roster labels are simple; no host paths required.
+1. **Cold open:** At a glance answers what it is; screenshot shows the product.
+2. **Primary path:** open index.html or ./setup.sh
+3. **Break/empty:** Missing deps fail with a readable next step in README/setup.
+4. **Loading:** First-run / setup prints next steps clearly.
+5. **Plain English + photo:** README embeds `docs/screenshots/hero.png` (no secrets).
 
 ## States
 
 | State | Notes |
 |---|---|
-| Loading | poster / first frames |
-| Empty | n/a with bundled assets |
-| Error | browser codec miss — H.264+AAC used |
-| Success | play any clip from the Videos section |
+| Loading | setup / first open |
+| Empty | first-run documented |
+| Error | called out in Try it |
+| Success | primary At-a-glance path works |
 
 Date: 2026-08-09
