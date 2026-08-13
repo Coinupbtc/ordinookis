@@ -2,8 +2,6 @@
 
 ![Screenshot](docs/screenshots/hero.png)
 
-
-
 Pixel character art + short browser-playable clips.
 
 ## At a glance
@@ -17,7 +15,7 @@ Pixel character art + short browser-playable clips.
 ## Try it
 
 ### One click
-Open [`index.html`](./index.html) in a modern browser.
+Open [`index.html`](./index.html) in a modern browser, or **[the GitHub Pages build](https://coinupbtc.github.io/ordinookis/)**.
 
 ### One command
 ```bash
